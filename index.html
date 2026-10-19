@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>WebGPU Ocean — Tessendorf FFT waves in three.js + TSL</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #0b1520; overflow: hidden; font-family: ui-monospace, Menlo, Consolas, monospace; }
+      canvas { display: block; width: 100vw; height: 100vh; touch-action: none; cursor: grab; }
+      canvas:active { cursor: grabbing; }
+      #stats { position: fixed; top: 12px; left: 12px; padding: 10px 14px; background: rgba(13,17,23,.72); color: #c9d1d9;
+        border: 1px solid #30363d; border-radius: 8px; font-size: 12px; line-height: 1.6; white-space: pre; pointer-events: none; }
+      #stats b { color: #58a6ff; }
+      #hint { position: fixed; bottom: 12px; left: 12px; color: #c9d1d9; opacity: .7; font-size: 11px; text-shadow: 0 1px 2px #000; }
+      #fallback { display: none; position: fixed; inset: 0; align-items: center; justify-content: center; color: #c9d1d9; text-align: center; padding: 24px; }
+      #fallback div { max-width: 520px; line-height: 1.6; }
+      #fallback h1 { color: #f0883e; font-size: 20px; }
+      a { color: #58a6ff; }
+    </style>
+  </head>
+  <body>
+    <div id="stats"></div>
+    <div id="hint">drag: orbit · right-drag: pan · wheel: zoom · space: pause · ?preset=Storm</div>
+    <div id="fallback"><div>
+      <h1>WebGPU is not available</h1>
+      <p id="fallback-reason"></p>
+      <p>This demo runs its FFT on WebGPU compute shaders. Try a recent Chrome / Edge (113+) on desktop,
+      Safari 26+, or Firefox 141+ on Windows. See <a href="https://caniuse.com/webgpu" target="_blank" rel="noopener">caniuse.com/webgpu</a>.</p>
+    </div></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
