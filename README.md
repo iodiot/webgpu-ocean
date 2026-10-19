@@ -4,7 +4,11 @@
 
 ![WebGPU Ocean, Breeze preset](docs/screenshot.png)
 
-<!-- GIF -->
+![Animated capture, Breeze preset](docs/demo.gif)
+
+| Storm preset |
+|---|
+| ![Storm preset](docs/storm.png) |
 
 **Live demo:** https://iodiot.github.io/webgpu-ocean/ (try `?preset=Storm`)
 
