@@ -1,6 +1,6 @@
 # WebGPU Ocean
 
-**A real-time Tessendorf FFT ocean in the browser, built with Three.js `WebGPURenderer` and TSL compute shaders. Three wave cascades, Jacobian whitecaps and physically-inspired water shading.**
+**A living ocean in your browser, built on Three.js and WebGPU. Every wave is simulated on the GPU in real time, from long 250 m swells down to ripples a few centimetres across. Crests sharpen and break into foam, the water mirrors the sky, sparkles in the sun and glows where light shines through thin waves. Pick the weather: Calm, Breeze or Storm.**
 
 ![WebGPU Ocean, Breeze preset](docs/screenshot.png)
 
